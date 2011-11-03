@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/dutch
+# catalog-date 2006-08-27 16:41:02 +0100
+# catalog-license gpl
+# catalog-version 1.3
 Name:		texlive-lshort-dutch
 Version:	1.3
 Release:	1
@@ -24,6 +30,7 @@ Introduction to LaTeX2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-dutch/WIJZIGINGEN
 %doc %{_texmfdistdir}/doc/latex/lshort-dutch/lshort-nl-1.3.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-dutch/lshort-nl-1.3.src.zip
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -34,3 +41,5 @@ Introduction to LaTeX2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
