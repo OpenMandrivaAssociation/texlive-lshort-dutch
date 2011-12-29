@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.doc.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is the Dutch (Nederlands) translation of the Short
@@ -30,7 +28,6 @@ Introduction to LaTeX2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-dutch/WIJZIGINGEN
 %doc %{_texmfdistdir}/doc/latex/lshort-dutch/lshort-nl-1.3.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-dutch/lshort-nl-1.3.src.zip
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,5 +38,3 @@ Introduction to LaTeX2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
