@@ -6,7 +6,7 @@
 # catalog-version 1.3
 Name:		texlive-lshort-dutch
 Version:	1.3
-Release:	10
+Release:	11
 Summary:	Introduction to LaTeX in Dutch
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/dutch
