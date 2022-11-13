@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/lshort/dutch
-# catalog-date 2006-08-27 16:41:02 +0100
-# catalog-license gpl
-# catalog-version 1.3
 Name:		texlive-lshort-dutch
-Version:	1.3
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Introduction to LaTeX in Dutch
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/dutch
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,24 +25,10 @@ Introduction to LaTeX2e.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3-2
-+ Revision: 753467
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3-1
-+ Revision: 718887
-- texlive-lshort-dutch
-- texlive-lshort-dutch
-- texlive-lshort-dutch
-- texlive-lshort-dutch
-
