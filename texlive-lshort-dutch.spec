@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Introduction to LaTeX in Dutch
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/lshort/dutch
+URL:		https://www.ctan.org/tex-archive/info/lshort/dutch
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-dutch.doc.r%{version}.tar.xz
